@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>演奏予定</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    main { max-width: 900px; margin: auto; padding: 20px; }
+
+    details {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    summary {
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 12px;
+      cursor: pointer;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .content { padding: 15px; }
+
+    ul { margin-left: 20px; }
+
+    /* ▶リンク付き */
+    .music-link::before {
+      content: "▶ ";
+      color: #e60000;
+      font-weight: bold;
+    }
+
+    .music-link {
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    .music-link:hover {
+      text-decoration: underline;
+    }
+
+    /* 未定表示 */
+    .undecided {
+      color: #999;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="schedule.html">活動予定</a>
+    <a href="diary.html">活動日誌</a>
+    <a href="board.html">掲示板</a>
+    <a href="events.html">演奏イベント</a>
+    <a href="scores.html">楽譜一覧</a>
+  </nav>
+</header>
+
+<main>
+  <h1>演奏予定</h1>
+
+  <details>
+    <summary>3月1日（日）函館西高等学校 卒業式 @函館西高等学校 体育館</summary>
+    <div class="content">
+
+      <strong>【ウェルカム演奏】</strong>
+      <ul>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=MvP9Y_rYAq4" target="_blank">ハナミズキ</a></li>
+      </ul>
+
+      <strong>【入場音楽】</strong>
+      <ul>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=orRA2ldkPj8" target="_blank">J-BEST ～みんなの卒うたメドレー～</a></li>
+      </ul>
+
+      <strong>【校歌斉唱】</strong>
+      <ul>
+        <li>校歌（3番まで）</li>
+      </ul>
+
+      <strong>【退場音楽】</strong>
+      <ul>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=-W9BGlrRz3E" target="_blank">YELL</a></li>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=d3r3kxJOXMk" target="_blank">栄光の架橋</a></li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details>
+    <summary>4月9日（木）対面式 @函館西高等学校 体育館</summary>
+    <div class="content">
+      <strong>【入場】</strong>
+      <ul><li class="undecided">（未定）</li></ul>
+      <strong>【退場】</strong>
+      <ul><li class="undecided">（未定）</li></ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>4月9日（木）ミニコンサート @函館西高等学校 音楽室</summary>
+    <div class="content">
+      <ul>
+        <li class="undecided">（未定）</li>
+        <li class="undecided">（未定）</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>5月17日（日）第57回函館五稜郭祭 @五稜郭公園</summary>
+    <div class="content">
+      <ul>
+        <li><a class="music-link" href="https://arrangerspublishingcompany.com/apc_media_player/playerwindow.php?item=M705" target="_blank">Look You Up</a></li>
+        <li><a class="music-link" href="https://viewer.jwpepper.com/smc2/?product=2436434&preview=true" target="_blank">PERRO CALIENTE（Hot Dog）</a></li>
+        <li class="undecided">（未定）</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>8月10日（月）第8回定期演奏会（創部75周年記念） @函館市民会館</summary>
+    <div class="content">
+
+      <strong>【第3部】</strong>
+      <ul>
+        <li class="undecided">（未定）</li>
+        <li class="undecided">（未定）</li>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=xsxISothoFY" target="_blank">ジャパニーズ・グラフィティ XIV（嵐）</a></li>
+        <li class="undecided">（未定）</li>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=Oj8wavQE6TU&themeRefresh=1" target="_blank">ジャパニーズ・グラフィティXIX（ドリフ）</a></li>
+      </ul>
+
+      <strong>【アンコール】</strong>
+      <ul>
+        <li class="undecided">（未定）</li>
+        <li><a class="music-link" href="https://www.youtube.com/watch?v=YATmYF8FDzo" target="_blank">ベイ・ブリーズ</a></li>
+      </ul>
+
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <p>© 吹奏楽部</p>
+</footer>
+
+</body>
+</html>

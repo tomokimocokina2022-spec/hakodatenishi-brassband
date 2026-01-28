@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>函館西高校 吹奏楽局</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== ヘッダー（固定メニュー） ===== -->
+<header>
+  <h1>函館西高校 吹奏楽局</h1>
+  <nav class="menu">
+    <a href="index.html">ホーム</a>
+    <a href="schedule.html">活動予定</a>
+    <a href="diary.html">活動日誌</a>
+    <a href="events.html">演奏予定</a>
+    <a href="scores.html">楽譜一覧</a>
+    <a href="absence.html">欠席連絡</a>
+
+    <!-- 外部リンク -->
+    <a href="https://drive.google.com/drive/folders/1vW9MVRw4EKeIq3iv2iTZOq9olY9yhPbZ?usp=drive_link"
+       target="_blank" rel="noopener">Googleドライブ</a>
+    <a href="https://classroom.google.com/c/Nzk1MjAzNDI3Mjg1"
+       target="_blank" rel="noopener">Classroom</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===== 写真カルーセル ===== -->
+<section class="carousel">
+  <img src="images/home1.jpg" alt="活動写真1">
+  <img src="images/home2.jpg" alt="活動写真2">
+  <img src="images/home3.jpg" alt="活動写真3">
+  <img src="images/home4.jpg" alt="活動写真4">
+  <img src="images/home5.jpg" alt="活動写真5">
+</section>
+
+<!-- ===== お知らせ ===== -->
+<section class="news">
+  <h2>お知らせ</h2>
+  <ul>
+    <li>2026/01/28　公式サイトを公開しました</li>
+    <li>欠席・遅刻・早退の連絡はフォームから入力してください</li>
+    <li>活動日誌は当日分を活動日誌タブで確認できます</li>
+  </ul>
+</section>
+
+<!-- ===== 欠席連絡フォームへのボタン ===== -->
+<section class="form-link">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLScFPjyXu6lnMJIIGjvyjiw4D7olVjnxv_BF2m_KuSo5ygqOvg/viewform"
+    target="_blank"
+    rel="noopener"
+    class="form-button">
+    欠席・遅刻・早退の連絡フォームはこちら
+  </a>
+</section>
+
+</main>
+
+<!-- ===== フッター ===== -->
+<footer>
+  <p>© 函館西高校 吹奏楽局</p>
+</footer>
+
+<!-- ===== カルーセル自動切り替え ===== -->
+<script>
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel img');
+
+slides.forEach((img, i) => {
+  if (i !== 0) img.style.display = 'none';
+});
+
+setInterval(() => {
+  slides[currentIndex].style.display = 'none';
+  currentIndex = (currentIndex + 1) % slides.length;
+  slides[currentIndex].style.display = 'block';
+}, 4000);
+</script>
+
+</body>
+</html>
